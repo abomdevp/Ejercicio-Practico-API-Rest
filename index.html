@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghibli API - Consumo de Servicios</title>
+</head>
+<body>
+
+    <h1>Studio Ghibli - Catálogo de Películas</h1>
+    <p>Los resultados se mostrarán en la <strong>consola (F12)</strong> y en la lista de abajo.</p>
+
+    <div style="margin-bottom: 20px;">
+        <button onclick="obtenerPeliculas('titulo-director')">Títulos y Directores</button>
+        <button onclick="obtenerPeliculas('titulo-año')">Títulos y Años</button>
+        <button onclick="obtenerPeliculas('titulo-descripcion')">Títulos y Descripciones</button>
+        <button onclick="obtenerPeliculas('solo-id')">Listar IDs</button>
+    </div>
+
+    <hr>
+    <div id="status">Estado: Esperando acción...</div>
+    <ul id="listaPeliculas"></ul>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
